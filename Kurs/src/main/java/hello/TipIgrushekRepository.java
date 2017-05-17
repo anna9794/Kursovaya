@@ -3,11 +3,12 @@ package hello;
 /**
  * Created by Анютка on 13.05.2017.
  */
+import hello.model.TipIgrushek;
 import org.springframework.data.repository.CrudRepository;
 
-import hello.model.TipIgrushek;
+import java.util.List;
 
 
-public interface TipIgrushekRepository extends CrudRepository<TipIgrushek, Long> {
+public interface TipIgrushekRepository extends CrudRepository<TipIgrushek, Integer> {
 
 }

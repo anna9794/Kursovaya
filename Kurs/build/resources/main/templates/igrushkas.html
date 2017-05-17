@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Igrushka</title>
+</head>
+<body>
+<h1>Igrushka list</h1>
+<p th:each="igrushka : ${igrushkas}">
+<p th:text="'ID ' + ${igrushka.id} + ' nazvanie ' + ${igrushka.nazvanie}"  />
+</p>
+
+</body>
+</html>
