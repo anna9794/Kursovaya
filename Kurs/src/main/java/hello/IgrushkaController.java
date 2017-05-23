@@ -20,18 +20,18 @@ import hello.IgrushkaRepository;
  * Created by Анютка on 13.05.2017.
  */
 @Controller
-@RequestMapping("/demo")
+@RequestMapping("/igra")
 public class IgrushkaController {
     @Autowired
     private IgrushkaRepository igrushkaRepository;
 
-    @RequestMapping("/list")
+    @RequestMapping("/listik")
     public String nazvanie (Model model) {
         model.addAttribute("nazvanie", igrushkaRepository.findAll());
         return "nazvanie";
     }
 
-    @RequestMapping("/add")
+    @RequestMapping("/dobavity")
     public
     @ResponseBody
     String add(@RequestParam(value = "igrushka", required = true) String nazvanie,
@@ -41,7 +41,7 @@ public class IgrushkaController {
         igrushkaRepository.save(n);
         return "Saved";
     }
-    @RequestMapping("/all")
+    @RequestMapping("/all2")
     public @ResponseBody Iterable<Igrushka> getAllIgrushka() {
 
         return igrushkaRepository.findAll();
@@ -56,7 +56,7 @@ public class IgrushkaController {
     public String greetingSubmit(@ModelAttribute Igrushka n, Model model) {
         igrushkaRepository.save(n);
         model.addAttribute("igrushka", n);
-        return "result";
+        return "resultIgr";
     }
 
 }

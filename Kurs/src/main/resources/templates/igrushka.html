@@ -6,11 +6,11 @@
 </head>
 <body>
 <h1>Igrushka</h1>
-<form action="#" th:action="@{/demo/igrushka}" th:object="${igrushka}" method="post">
-    <p>Id: <input type="text" th:field="*{id}" /></p>
+<form action="#" th:action="@{/igra/igrushka}" th:object="${igrushka}" method="post">
+    <p>Id: <input type="text" th:field="*{n_igrushki}" /></p>
     <p>Nazvanie: <input type="text" th:field="*{nazvanie}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 
 </form>
 </body>
-</html>ml>
+</html>

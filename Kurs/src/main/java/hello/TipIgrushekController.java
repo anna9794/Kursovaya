@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import hello.model.TipIgrushek;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import hello.Igrushka;
+import hello.IgrushkaRepository;
 
 /**
  * Created by Анютка on 13.05.2017.
